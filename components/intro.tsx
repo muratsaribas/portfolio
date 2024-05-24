@@ -3,13 +3,31 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
-    return (
+    
+    const getYearDifference = () =>  {
+        const start = new Date("09/10/2021");
+        const end = new Date();
+
+        let years = end.getFullYear() - start.getFullYear();
+        const endMonth = end.getMonth();
+        const startMonth = start.getMonth();
+
+        if (endMonth - startMonth < -5) {
+            years--;
+        }
+
+        return years;
+    }
+
+    const experience = useMemo(() => getYearDifference(), []);
+
+    return ( 
         <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
             <div className='flex items-center justify-center'>
                 <div className='relative'>
@@ -21,7 +39,7 @@ export default function Intro() {
                             duration: 0.2
                         }}
                     >
-                        <Image src="https://media.licdn.com/dms/image/D4E03AQHK0w_kdHsdVA/profile-displayphoto-shrink_400_400/0/1668620590031?e=1721260800&v=beta&t=kQYF5FY8A69djNM4--K61n6-rQNhFygqQAApsLREU3w"
+                        <Image src="https://avatars.githubusercontent.com/u/81035521?v=4"
                             alt='Murat portrait' width="192" height="192" quality="95" priority={true}
                             className='h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl'
                         />
@@ -45,7 +63,7 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0}}>
                 <span className="font-bold">Hello, I'm Murat.</span> I'm a{" "}
                 <span className="font-bold">frontend developer</span> with{" "}
-                <span className="font-bold">3 years</span> of experience. I enjoy
+                <span className="font-bold">{experience} years</span> of experience. I enjoy
                 creating user-friendly <span className="italic">websites & applications</span>. My focus is{" "}
                 <span className="underline">JavaScript (Angular)</span>.
             </motion.p>
