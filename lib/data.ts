@@ -1,4 +1,8 @@
 import React from "react";
+import xooiImg from '@/public/xooi.jpg';
+import graduateImg from '@/public/graduate.png';
+import isgenImg from '@/public/isgen.png';
+import svtImg from '@/public/SVTDashboard.png';
 
 export const links = [
     {
@@ -54,29 +58,44 @@ export const links = [
 //     },
 // ] as const;
 
-// export const projectsData = [
-//     {
-//         title: "CorpComment",
-//         description:
-//             "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-//         tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-//         imageUrl: corpcommentImg,
-//     },
-//     {
-//         title: "rmtDev",
-//         description:
-//             "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//         tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//         imageUrl: rmtdevImg,
-//     },
-//     {
-//         title: "Word Analytics",
-//         description:
-//             "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-//         tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-//         imageUrl: wordanalyticsImg,
-//     },
-// ] as const;
+export const projectsData = [
+    {
+        title: "Hybrid Convolutional Neural Network-Based Diagnosis System",
+        description:
+            "Developed a Hybrid Convolutional Neural Network-Based Diagnosis System for Intracranial Hemorrhage as my graduation project.",
+        tags: ["Python", "Deep Learning", "Medical Imaging"],
+        imageUrl: graduateImg,
+    },
+    {
+        title: "XOOI CRM",
+        description:
+            "Developed and maintained CRM/SPM modules to enhance customer relationship management and sales performance.",
+        tags: ["Angular", "SignalR", "RxJS", "NGRX", "TailwindCSS"],
+        imageUrl: xooiImg,
+    },
+    {
+        title: "ISGen",
+        description:
+            "Developed a process tracking software aimed at preventing potential work accidents within the scope of occupational health and safety legislation.",
+        tags: ["Angular", "PrimeNG", "Apexcharts"],
+        imageUrl: isgenImg,
+    },
+    {
+        title: "Meeting Room Module",
+        description:
+            "Designed to provide real-time visibility into the availability of meeting rooms within an organization.",
+        tags: ["Angular", "TailwindCSS", "Microsoft Graph API"],
+        imageUrl: '',
+    },
+    {
+        title: "Award",
+        description:
+            "Developed a comprehensive solution for efficiently gathering and managing data from various field operations.",
+        tags: ["Angular", "TaigaUI", "MQTT", "Chart.js", "TailwindCSS"],
+        imageUrl: svtImg,
+    }
+] as const;
+
 
 export const skillsData = [
     "HTML",
