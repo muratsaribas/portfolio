@@ -4,6 +4,9 @@ import graduateImg from '@/public/graduate.png';
 import isgenImg from '@/public/isgen.png';
 import svtImg from '@/public/SVTDashboard.png';
 
+import { CgWorkAlt } from "react-icons/cg";
+import { FaAngular } from "react-icons/fa";
+
 export const links = [
     {
         name: "Home",
@@ -31,32 +34,36 @@ export const links = [
     },
 ] as const;
 
-// export const experiencesData = [
-//     {
-//         title: "Graduated bootcamp",
-//         location: "Miami, FL",
-//         description:
-//             "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-//         icon: React.createElement(LuGraduationCap),
-//         date: "2019",
-//     },
-//     {
-//         title: "Front-End Developer",
-//         location: "Orlando, FL",
-//         description:
-//             "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-//         icon: React.createElement(CgWorkAlt),
-//         date: "2019 - 2021",
-//     },
-//     {
-//         title: "Full-Stack Developer",
-//         location: "Houston, TX",
-//         description:
-//             "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-//         icon: React.createElement(FaReact),
-//         date: "2021 - present",
-//     },
-// ] as const;
+export const experiencesData = [
+    {
+        title: "Front-End Developer",
+        location: "AKIM METAL AR-GE",
+        description:`
+        ● Integrated APIs with Angular applications, enhancing data accessibility and functionality for end users.<br>
+        ● Developed reusable UI components using Angular libraries, promoting code consistency across
+        projects while reducing development time significantly.<br>
+        ● Worked closely with UX/UI designers to translate their designs into functional web applications.
+        `,
+        icon: React.createElement(CgWorkAlt),
+        date: "10/2021 - 09/2023",
+    },
+    {
+        title: "Front-End Developer",
+        location: "XOOI",
+        description:`
+            ● Developed user-friendly interfaces for web applications, resulting in increased user satisfaction and
+            engagement.<br>
+            ● Utilized HTML, CSS, and JavaScript to create visually appealing and responsive web pages that met
+            client requirements.<br>
+            ● Developed and maintained CRM/SPM modules to enhance customer relationship management and
+            sales performance.<br>
+            ● Created project management modules, including task assignment, progress tracking, and reporting
+            features, to facilitate effective project execution.
+        `,
+        icon: React.createElement(FaAngular),
+        date: "09/2023 - present",
+    },
+] as const;
 
 export const projectsData = [
     {
@@ -102,19 +109,13 @@ export const skillsData = [
     "CSS",
     "JavaScript",
     "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
+    "Angular",
     "Git",
     "Tailwind",
-    "Prisma",
-    "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
-    "Express",
-    "PostgreSQL",
-    "Python",
-    "Django",
-    "Framer Motion",
+    "NGRX",
+    "RxJS",
+    "SignalR",
+    "Next.js",
+    "RESTful API",
+    "Responsive Design"
 ] as const;
